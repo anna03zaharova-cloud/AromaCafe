@@ -1,0 +1,14 @@
+{
+"address": "г. Тирасполь, ул. Ленина 45",
+"phone": "+373 (777) 55-321",
+"email": "aromacafe@gmail.com",
+"workTime": {
+    "weekdays": "Пн–Пт: 08:00 – 22:00",
+    "weekend": "Сб–Вс: 09:00 – 23:00"
+},
+"socials": {
+    "instagram": "https://instagram.com/aromacafe",
+    "facebook": "https://facebook.com/aromacafe",
+    "telegram": "https://t.me/aromacafe"
+}
+}

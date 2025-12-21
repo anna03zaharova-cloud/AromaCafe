@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <title>AromaCafe</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+
+    <!-- Лого -->
+            <a href="#" class="logo">
+                <i class='bx  bx-coffee'></i>AromaCafe</a>
+
+    <!-- Иконка меню -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <!-- Навигация -->
+    <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html">Главная</a></li>
+                    <li class="menu__item"><a href="about.html">О нас</a></li>
+                    <li class="menu__item"><a href="menu.html">Меню</a></li>
+                    <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                    <li class="menu__item"><a href="checkout.html">Оформление заказа</a></li>
+                    <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+    <!-- Контент -->
+    <div class="header__content">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class='bx bx-moon'></i>
+    </button>
+
+    <a href="cart.html" class="cart__btn">
+        <i class='bx bx-cart'></i>
+        <span class="cart__count" id="cartCount">0</span>
+    </a>
+        </div>
+    </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Оформление заказа -->
+
+<main class="checkout-page">
+        <h2 class="checkout-title">Отлично! Заказ почти у вас — осталось заполнить данные ☕</h2>
+    
+    <div class="checkout-horizontal">
+
+    <!-- 1. ЗАКАЗ -->
+    <div class="checkout-card checkout-order">
+        <h3 class="checkout-card__title">Ваш заказ</h3>
+        <div id="checkoutCartList"></div>
+    </div>
+
+    <!-- 2. ПОЛУЧЕНИЕ + КОНТАКТЫ -->
+    <div class="checkout-card checkout-data">
+        <h3 class="checkout-card__title">Данные заказа</h3>
+
+    <!-- СПОСОБ ПОЛУЧЕНИЯ -->
+        <label class="radio">
+        <input type="radio" name="deliveryType" value="pickup" checked>Самовывоз</label>
+
+        <label class="radio">
+        <input type="radio" name="deliveryType" value="delivery">Доставка</label>
+
+    <!-- ВРЕМЯ ДОСТАВКИ (СКРЫТО ПО УМОЛЧАНИЮ) -->
+    <div class="checkout-time hidden" id="deliveryTimeBlock">
+
+        <label class="radio">
+        <input type="radio" name="timeMode" value="now" checked>По готовности</label>
+
+        <label class="radio">
+        <input type="radio" name="timeMode" value="custom">Выбрать время доставки</label>
+        <input type="time" id="orderTime" class="checkout-time__input hidden"/>
+    </div>
+
+    <!-- КОНТАКТЫ -->
+        <input type="text" placeholder="Имя">
+        <input type="tel" placeholder="Телефон">
+        <textarea placeholder="Комментарий"></textarea>
+    </div>
+
+
+    <!-- 3. ИТОГО -->
+    <div class="checkout-card checkout-summary">
+        <h3 class="checkout-card__title">Итого</h3>
+
+        <p>Сумма: <span id="sumOrder">0</span> rub</p>
+        <p>Доставка: <span id="sumDelivery">0</span> rub</p>
+
+        <p class="checkout-total">Итого: <span id="sumTotal">0</span> rub</p>
+        <button class="checkout-confirm">Оплатить заказ</button>
+    </div>
+</div>
+
+    <!-- Модальное окно -->
+    <div class="order-modal" id="orderModal">
+        <div class="order-modal__overlay"></div>
+            <div class="order-modal__content">
+            <h3 class="order-modal__title">🎉 Заказ оформлен!</h3>
+            <p class="order-modal__text">Спасибо за заказ в <b>AromaCafe</b>☕<br>
+            Мы уже начали готовить его для вас.</p>
+
+        <div class="order-modal__info">
+            <p><b>Номер заказа:</b> <span id="orderNumber"></span></p>
+            <p><b>Примерное время:</b> 15–20 минут</p>
+            <p><b>Телефон:</b> +373 (777) 55-321</p>
+        </div>
+
+        <div class="order-modal__actions">
+            <a href="index.html" class="order-modal__btn">На главную</a>
+            <button class="order-modal__close" id="orderModalClose">Закрыть</button>
+        </div>
+    </div>
+</div> 
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+
+        <!-- Лого & О нас -->
+        <div class="footer__about">
+            <a href="index.html" class="footer__logo">
+                <i class='bx bx-coffee'></i> AromaCafe</a>
+            <p class="footer__text">
+                AromaCafe — это место, где каждый глоток дарит настроение.
+                Мы создаём уют, вкус и атмосферу для вас каждый день.
+            </p>
+        </div>
+
+        <!-- Навигация -->
+        <div class="footer__nav">
+            <h3 class="footer__title">Навигация</h3>
+            <ul class="footer__list">
+                <li class="menu__item"><a href="index.html">Главная</a></li>
+                <li class="menu__item"><a href="about.html">О нас</a></li>
+                <li class="menu__item"><a href="menu.html">Меню</a></li>
+                <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                <li class="menu__item"><a href="checkout.html">Оформить заказ</a></li>
+                <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer__contacts">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__list">
+                <li><i class='bx bx-map'></i> г. Тирасполь, ул. Ленина, 15</li>
+                <li><i class='bx bx-phone'></i> +373 (777) 55-321</li>
+                <li><i class='bx bx-envelope'></i> aromacafe@gmail.com</li>
+            </ul>
+        </div>
+
+        <!-- Соц.сети -->
+        <div class="footer__socials">
+            <h3 class="footer__title">Мы в соцсетях</h3>
+            <div class="footer__icons">
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-telegram'></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="footer__bottom">
+    <p class="footer__copy">
+        © <span id="footerYear"></span> AromaCafe. Все права защищены.
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+    </p>
+    <p class="footer__author">
+        Сайт разработан: <span>Захарова А.А.</span>
+    </p>
+</div>
+
+</footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+</html> 

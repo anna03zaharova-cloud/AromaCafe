@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <title>AromaCafe</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+
+    <!-- Логотип -->
+            <a href="#" class="logo">
+                <i class='bx  bx-coffee'></i>AromaCafe</a>
+
+    <!-- Иконка меню -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <!-- Навигация -->
+    <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html">Главная</a></li>
+                    <li class="menu__item"><a href="about.html">О нас</a></li>
+                    <li class="menu__item"><a href="menu.html">Меню</a></li>
+                    <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                    <li class="menu__item"><a href="checkout.html">Оформить заказ</a></li>
+                    <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+    <!-- Контент -->
+    <div class="header__content">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class='bx bx-moon'></i>
+    </button>
+
+    <a href="cart.html" class="cart__btn">
+        <i class='bx bx-cart'></i>
+        <span class="cart__count" id="cartCount">0</span>
+    </a>
+        </div>
+    </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Корзина -->
+
+<main class="cart-page">
+    <div class="container cart">
+
+        <h2 class="cart__title">Ваша корзина</h2>
+
+        <div id="cartList" class="cart__list"></div>
+
+        <div class="cart__footer">
+            <h3 id="cartTotal" class="cart__total">Итого: 0 rub</h3>
+        <div class="cart-summary">
+            <a href="checkout.html" class="checkout-btn" id="checkoutBtn">Оформить заказ</a>
+        </div>
+            <a href="menu.html" class="cart__back">← Вернуться в меню</a>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+
+        <!-- Лого & О нас -->
+        <div class="footer__about">
+            <a href="index.html" class="footer__logo">
+                <i class='bx bx-coffee'></i> AromaCafe</a>
+            <p class="footer__text">
+                AromaCafe — это место, где каждый глоток дарит настроение.
+                Мы создаём уют, вкус и атмосферу для вас каждый день.
+            </p>
+        </div>
+
+        <!-- Навигация -->
+        <div class="footer__nav">
+            <h3 class="footer__title">Навигация</h3>
+            <ul class="footer__list">
+                <li class="menu__item"><a href="index.html">Главная</a></li>
+                <li class="menu__item"><a href="about.html">О нас</a></li>
+                <li class="menu__item"><a href="menu.html">Меню</a></li>
+                <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                <li class="menu__item"><a href="checkout.html">Оформить заказ</a></li>
+                <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer__contacts">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__list">
+                <li><i class='bx bx-map'></i> г. Тирасполь, ул. Ленина, 15</li>
+                <li><i class='bx bx-phone'></i> +373 (777) 55-321</li>
+                <li><i class='bx bx-envelope'></i> aromacafe@gmail.com</li>
+            </ul>
+        </div>
+
+        <!-- Соц.сети -->
+        <div class="footer__socials">
+            <h3 class="footer__title">Мы в соцсетях</h3>
+            <div class="footer__icons">
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-telegram'></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="footer__bottom">
+    <p class="footer__copy">
+        © <span id="footerYear"></span> AromaCafe. Все права защищены.
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+    </p>
+    <p class="footer__author">
+        Сайт разработан: <span>Захарова А.А.</span>
+    </p>
+</div>
+
+</footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+</html>

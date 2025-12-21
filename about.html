@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <title>AromaCafe</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <!-- Логотип -->
+            <a href="index.html" class="logo">
+                <i class='bx bx-coffee'></i>AromaCafe</a>
+
+            <!-- Иконка меню -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html">Главная</a></li>
+                    <li class="menu__item"><a href="about.html">О нас</a></li>
+                    <li class="menu__item"><a href="menu.html">Меню</a></li>
+                    <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                    <li class="menu__item"><a href="checkout.html">Оформит заказ</a></li>
+                    <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+    <!-- Контент -->
+    
+    <div class="header__content">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class='bx bx-moon'></i>
+    </button>
+        <i class='bx bx-caret-down'></i>
+        </div>
+    </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Страница О нас -->
+
+<main>
+<section class="about__hero">
+        <div class="about-hero__overlay"></div>
+
+        <div class="about-hero__inner container">
+            <div class="about-hero__text fade-up">
+                <p class="about-hero__label">Почему выбирают нас?</p>
+                <h1 class="about-hero__title">Кофе, который дарит ощущение домашнего уюта.</h1>
+                <p class="about-hero__subtitle">
+                    AromaCafe началось с простой, но искренней идеи — создать место, куда хочется возвращаться. 
+                    Не просто за чашкой кофе, а за ощущением уюта, спокойствия и маленькой паузы среди повседневной суеты.
+                </p>
+
+                <div class="about-hero__actions">
+                    <a href="menu.html" class="about-hero__btn-primary">Изучите наше меню</a>
+                    <button class="about-hero__btn-ghost" id="storyModalOpen">
+                        Наша кофейная история
+                    </button>
+                </div>
+            </div>
+        </div>
+</section>
+
+    <div class="story-modal" id="storyModal">
+        <div class="story-modal__overlay"></div>
+        <div class="story-modal__content">
+            <button class="story-modal__close" id="storyModalClose">&times;</button>
+            <h3>Наша кофейная история</h3>
+            <p>
+                Всё началось с любви к настоящему кофе. Мы долго искали идеальный вкус, экспериментировали с сортами зёрен, степенью обжарки и способами приготовления. 
+                Каждый рецепт проходил десятки проб, пока не стал именно тем, что сегодня вы чувствуете в каждой чашке AromaCafe.  
+            </p>
+            <p>
+                Со временем AromaCafe стало больше, чем просто кофейня. Это пространство для людей, 
+                которые ценят качество, искренность и комфорт. Мы создаём десерты вручную, подбираем ингредиенты с особым вниманием 
+                и относимся к каждому гостю как к другу.
+            </p>
+        </div>
+    </div>
+
+<section class="about-modern__container fade-up">
+    <div class="about-modern__grid">
+
+            <!-- Видео -->
+            <div class="about-modern__media">
+                <video src="IMG/about-vid1.mp4" autoplay muted loop></video>
+            </div>
+
+            <!-- Текст -->
+            <div class="about-modern__text">
+                <h2>Наша философия и мастерство</h2>
+
+                <p>
+                    В AromaCafe мы считаем, что отличный кофе — это не просто напиток, это целое событие. 
+                    С того момента, как вы переступите порог нашего заведения, вы станете частью истории, 
+                    основанной на страсти, качестве и заботе.
+                </p>
+
+                <p>
+                    Мы тщательно отбираем отборные кофейные зерна, обжариваем их небольшими партиями и готовим каждый напиток с вниманием к деталям. 
+                    В AromaCafe нет спешки — только аромат, тепло и уют.
+                </p>
+                <a href="menu.html" class="about-modern-btn">В меню !</a>
+            </div>
+    </div>
+</section>
+
+<section class="stats__container fade-up">
+    <h2 class="heading"><span>AromaCafe</span> в статистике</h2>
+
+        <div class="stats__grid">
+            <div class="stats__item">
+                <span class="stats__number" data-counter="300" data-suffix="+">0</span>
+                <p class="stats__label">Чашек кофе в неделю</p>
+            </div>
+
+            <div class="stats__item">
+                <span class="stats__number" data-counter="180" data-suffix="+">0</span>
+                <p class="stats__label">Довольных гостей</p>
+            </div>
+
+            <div class="stats__item">
+                <span class="stats__number" data-counter="25" data-suffix="+">0</span>
+                <p class="stats__label">Фирменных напитков и десертов</p>
+            </div>
+
+            <div class="stats__item">
+                <span class="stats__number" data-counter="5" data-suffix="">0</span>
+                <p class="stats__label">Сколько лет радуем Вас своей продукцией</p>
+            </div>
+    </div>
+</section>
+
+<!-- ГАЛЛЕРЕЯ КАФЕ -->
+
+<section class="gallery" id="gallery">
+    <h2 class="heading"><span>Интерьер</span> AromaCafe</h2>
+
+    <div class="gallery__grid container">
+        <img src="IMG/cafe-1.jpg" alt="Фото интерьера 1" class="gallery__img">
+        <img src="IMG/cafe-2.jpg" alt="Фото интерьера 2" class="gallery__img">
+        <img src="IMG/cafe-3.jpg" alt="Фото интерьера 3" class="gallery__img">
+        <img src="IMG/cafe-4.jpg" alt="Фото интерьера 4" class="gallery__img">
+    </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox__close" id="lightboxClose">&times;</span>
+
+    <span class="lightbox__arrow lightbox__arrow--left" id="lightboxPrev">
+        <i class='bx bx-chevron-left'></i>
+    </span>
+
+    <img src="" alt="Preview" class="lightbox__img" id="lightboxImage">
+
+    <span class="lightbox__arrow lightbox__arrow--right" id="lightboxNext">
+        <i class='bx bx-chevron-right'></i>
+    </span>
+</div>
+
+<!-- КОМАНДА -->
+<section class="team__container fade-up">
+    <h2 class="heading"><span>Наша</span> Команда</h2>
+
+        <div class="team__grid">
+
+            <div class="team__card">
+                <img src="IMG/team-1.jpg" alt="Бариста" class="team__img">
+                <h3 class="team__name">Кузнецова Анна Дмитриевна</h3>
+                <p class="team__role">Главный бариста</p>
+            </div>
+
+            <div class="team__card">
+                <img src="IMG/team-2.jpg" alt="Кассир-консультант" class="team__img">
+                <h3 class="team__name">Волков Дмитрий Игоревич</h3>
+                <p class="team__role">Кассир-консультант</p>
+            </div>
+
+            <div class="team__card">
+                <img src="IMG/team-3.jpg" alt="PR-менеджер" class="team__img">
+                <h3 class="team__name">Соколова Ольга Максимовна</h3>
+                <p class="team__role">PR-менеджер</p>
+            </div>
+    </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__container">
+
+            <!-- Лого & О нас -->
+            <div class="footer__about">
+                <a href="index.html" class="footer__logo">
+                    <i class='bx bx-coffee'></i> AromaCafe</a>
+                <p class="footer__text">
+                    AromaCafe — это место, где каждый глоток дарит настроение.
+                    Мы создаём уют, вкус и атмосферу для вас каждый день.
+                </p>
+            </div>
+
+            <!-- Навигация -->
+            <div class="footer__nav">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__list">
+                    <li class="menu__item"><a href="index.html">Главная</a></li>
+                    <li class="menu__item"><a href="about.html">О нас</a></li>
+                    <li class="menu__item"><a href="menu.html">Меню</a></li>
+                    <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                    <li class="menu__item"><a href="checkout.html">Оформление заказа</a></li>
+                    <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Контакты -->
+            <div class="footer__contacts">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list">
+                    <li><i class='bx bx-map'></i> г. Тирасполь, ул. Ленина, 15</li>
+                    <li><i class='bx bx-phone'></i> +373 (777) 55-321</li>
+                    <li><i class='bx bx-envelope'></i> aromacafe@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Соц.сети -->
+            <div class="footer__socials">
+                <h3 class="footer__title">Мы в соцсетях</h3>
+                <div class="footer__icons">
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-telegram'></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="footer__bottom">
+            <p class="footer__copy">
+                © <span id="footerYear"></span> AromaCafe. Все права защищены.
+                <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            </p>
+            <p class="footer__author">
+                Сайт разработан: <span>Захарова А.А. </span>
+            </p>
+    </div>
+</footer>
+
+<!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+</html>

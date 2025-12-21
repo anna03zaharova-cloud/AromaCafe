@@ -1,0 +1,26 @@
+[
+{
+    "name": "Анна М.",
+    "rating": "★★★★★",
+    "text": "Очень вкусный кофе и уютная атмосфера!",
+    "photo": "IMG/customer-1.jpg"
+},
+{
+    "name": "Игорь К.",
+    "rating": "★★★★★",
+    "text": "Лучший латте в городе!",
+    "photo": "IMG/customer-2.jpg"
+},
+{
+    "name": "Мария Л.",
+    "rating": "★★★★☆",
+    "text": "Часто захожу утром за кофе.",
+    "photo": "IMG/customer-3.jpg"
+},
+{
+    "name": "Дмитрий С.",
+    "rating": "★★★★☆",
+    "text": "Отличный сервис и зерно.",
+    "photo": "IMG/customer-4.jpg"
+}
+]

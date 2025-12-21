@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <title>AromaCofe</title>
+</head>
+<body>
+    
+<header class="header">
+    <div class="container">
+
+    <!-- Логотип -->
+            <a href="#" class="logo">
+                <i class='bx  bx-coffee'></i>AromaCafe</a>
+    
+    <!-- Иконка меню -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <!--Навигация-->
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html">Главная</a></li>
+                    <li class="menu__item"><a href="about.html">О нас</a></li>
+                    <li class="menu__item"><a href="menu.html">Меню</a></li>
+                    <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                    <li class="menu__item"><a href="checkout.html">Оформить заказ</a></li>
+                    <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+    <!-- Контент -->
+    
+    <div class="header__content">
+        <button class="theme-toggle" id="themeToggle">
+        <i class='bx bx-moon'></i>
+    </button>
+        </div>
+    </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Главная -->
+<main>
+<section class="home" id="home">
+    <div class="home__slider swiper">
+
+        <div class="swiper-wrapper">
+
+            <!-- ========== Слайд 1 ========== -->
+            <div class="swiper-slide home__slide">
+                <div class="home__content">
+                <div class="home__text-block">
+                    <h2 class="home__title">Американо</h2>
+                    <p class="home__text">Освежающая классика, которая зарядит вас энергией на утро благодаря насыщенному аромату и яркому вкусу.</p>
+                    <a href="menu.html" class="home__bottom">В меню !<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                    <div class="home__img-wrapper">
+                <img src="IMG/home1.png" alt="Американо" class="home__img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== Слайд 2 ========== -->
+            <div class="swiper-slide home__slide">
+            <div class="home__content">
+                <div class="home__text-block">
+                    <h2 class="home__title">Эспрессо</h2>
+                    <p class="home__text">Заряд чистой энергии для тех, кто жаждет истинной крепости кофе.</p>
+                    <a href="menu.html" class="home__bottom">В меню !<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                    <div class="home__img-wrapper">
+                <img src="IMG/home2.png" alt="Эспрессо" class="home__img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== Слайд 3 ========== -->
+            <div class="swiper-slide home__slide">
+            <div class="home__content">
+                <div class="home__text-block">
+                    <h2 class="home__title">Капучино</h2>
+                    <p class="home__text">Нежная молочная пенка, мягкий эспрессо и идеально сбалансированный вкус — чистое кофейное наслаждение в каждом глотке.</p>
+                    <a href="menu.html" class="home__bottom">В меню !<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                    <div class="home__img-wrapper">
+                <img src="IMG/home3.png" alt="Капучино" class="home__img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== Слайд 4 ========== -->
+            <div class="swiper-slide home__slide">
+                <div class="home__content">
+                <div class="home__text-block">
+                    <h2 class="home__title">Латте</h2>
+                    <p class="home__text">Идеальный выбор для тех, кто любит сливочный, мягкий кофе с нежным оттенком эспрессо и больше молока.</p>
+                    <a href="menu.html" class="home__bottom">В меню !<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="home__img-wrapper">
+                <img src="IMG/home4.png" alt="Латте" class="home__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div> 
+
+        <!-- стрелки -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+</section>
+
+<!-- О нас -->
+
+<section class="about" id="about">
+    <h2 class="heading"><span>О</span> Нас</h2>
+    
+    <div class="about__container">
+        <div class="about__media">
+            <div class="about__video-wrapper">
+                <video class="about__video" src="IMG/about-vid1.mp4" muted autoplay loop></video>
+                <h3 class="about__video-title">Лучший кофе</h3>
+            </div>
+        </div>
+
+    <div class="about__content">
+            
+            <h3 class="about__subtitle">Почему выбирают нас?</h3>
+                
+            <p class="about__text">
+                AromaCafe начиналось с простой идеи — создать место, где кофе станет небольшим ежедневным ритуалом радости.</p>
+            <p class="about__text">
+                Где используются только отборные кофейные зёрна и тщательно проходит каждый этап приготовления — от помола до подачи. 
+                Никаких компромиссов: свежее молоко, натуральные сиропы и десерты ручной работы без лишних добавок.</p>
+            <p class="about__text">
+                Сегодня AromaCafe — это история, которая продолжается каждый день. История, в которой главную роль играете Вы — наши гости. 
+                И мы рады писать её вместе с Вами, чашка за чашкой.</p>
+
+            <a href="about.html" class="about__btn btn">Подробнее О нас</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ГАЛЛЕРЕЯ КАФЕ -->
+
+<section class="gallery" id="gallery">
+    <h2 class="heading"><span>Наше</span> Кафе с утным интерьером</h2>
+
+    <div class="gallery__grid container">
+        <img src="IMG/cafe-1.jpg" alt="Фото интерьера 1" class="gallery__img">
+        <img src="IMG/cafe-2.jpg" alt="Фото интерьера 2" class="gallery__img">
+        <img src="IMG/cafe-3.jpg" alt="Фото интерьера 3" class="gallery__img">
+        <img src="IMG/cafe-4.jpg" alt="Фото интерьера 4" class="gallery__img">
+    </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox__close" id="lightboxClose">&times;</span>
+
+    <span class="lightbox__arrow lightbox__arrow--left" id="lightboxPrev">
+        <i class='bx bx-chevron-left'></i>
+    </span>
+
+    <img src="" alt="Preview" class="lightbox__img" id="lightboxImage">
+
+    <span class="lightbox__arrow lightbox__arrow--right" id="lightboxNext">
+        <i class='bx bx-chevron-right'></i>
+    </span>
+</div>
+
+<!-- Отзывы -->
+
+<section class="customers" id="customers">
+    <h2 class="heading"><span>Ваши</span> Отзывы</h2>
+
+    <div class="customers__controls container">
+        <button class="customers__btn-review" id="openReviewModal">
+            Оставить отзыв
+        </button>
+    </div>
+
+    <!-- Свайп слайдера -->
+    <div class="customers__slider swiper">
+        <div class="swiper-wrapper" id="reviewsContainer">
+
+            <!-- 1 -->
+            <div class="swiper-slide">
+                <article class="customers__card">
+                    <div class="customers__top">
+                        <img src="IMG/customer-1.jpg" alt="Галыгина" class="customers__img">
+                        <div>
+                            <h3 class="customers__name">Галыгина А.В</h3>
+                            <div class="customers__rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="customers__text">
+                        Очень уютное место! Латте просто волшебный, а атмосфера расслабляет после работы.
+                    </p>
+                </article>
+            </div>
+
+            <!-- 2 -->
+            <div class="swiper-slide">
+                <article class="customers__card">
+                    <div class="customers__top">
+                        <img src="IMG/customer-2.jpg" alt="Морозов" class="customers__img">
+                        <div>
+                            <h3 class="customers__name">Морозов К.А</h3>
+                            <div class="customers__rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p class="customers__text">
+                        Беру у вас кофе каждое утро. Всегда стабильно вкусно и быстро, персонал вежливый.
+                    </p>
+                </article>
+            </div>
+
+            <!-- 3 -->
+            <div class="swiper-slide">
+                <article class="customers__card">
+                    <div class="customers__top">
+                        <img src="IMG/customer-3.jpg" alt="Осминкина" class="customers__img">
+                        <div>
+                            <h3 class="customers__name">Осминкина А.О</h3>
+                            <div class="customers__rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="customers__text">
+                        Лучший чизкейк в городе! Серьёзно, пробовала везде — Ваш самый нежный.
+                    </p>
+                </article>
+            </div>
+
+            <!-- 4 -->
+            <div class="swiper-slide">
+                <article class="customers__card">
+                    <div class="customers__top">
+                        <img src="IMG/customer-4.jpg" alt="Черновский" class="customers__img">
+                        <div>
+                            <h3 class="customers__name">Черновский С.М</h3>
+                            <div class="customers__rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="customers__text">
+                        Очень понравился капучино! Аромат насыщенный, молочная пена идеальная.
+                    </p>
+                </article>
+            </div>
+
+        </div>
+
+        <!-- Навигация -->
+        <div class="swiper-button-next customers__next"></div>
+        <div class="swiper-button-prev customers__prev"></div>
+    </div>
+</section>
+
+<!-- Оставить отзыв -->
+
+<div class="review-modal" id="reviewModal">
+    <div class="review-modal__content">
+        
+        <h3 class="review-modal__title">Оставить отзыв</h3>
+
+        <form id="reviewForm" class="review-modal__form">
+
+            <div class="review-modal__field">
+                <label>Ваше имя:</label>
+                <input type="text" id="reviewName" required>
+            </div>
+
+            <div class="review-modal__field">
+                <label>Ваш отзыв:</label>
+                <textarea id="reviewText" required></textarea>
+            </div>
+
+            <div class="review-modal__field">
+                <label>Оценка:</label>
+                <div class="review-modal__stars" id="starRating">
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+
+            <button class="review-modal__submit" type="submit">Отправить</button>
+            <button class="review-modal__close" type="button" id="closeReviewModal">Закрыть</button>
+
+        </form>
+    </div>
+</div>
+
+<!-- Контакты -->
+<section class="contacts" id="contacts">
+    <h2 class="heading"><span>Наши</span> Контакты</h2>
+
+    <!-- Статус работы -->
+    <div class="contacts__status" id="contactStatus"></div>
+
+    <div class="contacts__container container">
+
+        <!-- Информация -->
+        <div class="contacts__info">
+            <h3 class="contacts__subtitle">Наши контакты</h3>
+
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <i class='bx bx-map'></i>
+                    <span id="contactAddress">г. Тирасполь, ул. Ленина, 15</span>
+                </li>
+                <li class="contacts__item">
+                    <i class='bx bx-phone'></i>
+                    <span id="contactPhone">+373 (555) 00-123</span>
+                </li>
+                <li class="contacts__item">
+                    <i class='bx bx-envelope'></i>
+                    <span id="contactEmail">aromacafe@gmail.com</span>
+                </li>
+            </ul>
+
+            <h3 class="contacts__subtitle">График работы</h3>
+
+            <ul class="contacts__schedule">
+                <li>Пн — Пт: <span>08:00 – 22:00</span></li>
+                <li>Сб — Вс: <span>09:00 – 23:00</span></li>
+            </ul>
+        </div>
+
+        <!-- Местоположение кафе (карта) -->
+        <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2728.9382577321085!2d29.62259767486839!3d46.84490534026741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c902e5c67689fb%3A0xff086046b433f9c8!2sStrada%20Lenin%2045%2C%20Tiraspol%2C%20Moldova!5e0!3m2!1sen!2s!4v1765390180300!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+
+        <!-- Лого & О нас -->
+        <div class="footer__about">
+            <a href="index.html" class="footer__logo">
+                <i class='bx bx-coffee'></i> AromaCafe</a>
+            <p class="footer__text">
+                AromaCafe — это место, где каждый глоток дарит настроение.
+                Мы создаём уют, вкус и атмосферу для вас каждый день.
+            </p>
+        </div>
+
+        <!-- Навигация -->
+        <div class="footer__nav">
+            <h3 class="footer__title">Навигация</h3>
+            <ul class="footer__list">
+                <li class="menu__item"><a href="index.html">Главная</a></li>
+                <li class="menu__item"><a href="about.html">О нас</a></li>
+                <li class="menu__item"><a href="menu.html">Меню</a></li>
+                <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                <li class="menu__item"><a href="checkout.html">Оформить заказ</a></li>
+                <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer__contacts">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__list">
+                <li><i class='bx bx-map'></i> г. Тирасполь, ул. Ленина, 15</li>
+                <li><i class='bx bx-phone'></i> +373 (777) 55-321</li>
+                <li><i class='bx bx-envelope'></i> aromacafe@gmail.com</li>
+            </ul>
+        </div>
+
+        <!-- Соц.сети -->
+        <div class="footer__socials">
+            <h3 class="footer__title">Мы в соцсетях</h3>
+            <div class="footer__icons">
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-telegram'></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+    <p class="footer__copy">
+        © <span id="footerYear"></span> AromaCafe. Все права защищены.
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+    </p>
+    <p class="footer__author">
+        Сайт разработан: <span>Захарова А.А.</span>
+    </p>
+</div>
+
+</footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+</html>

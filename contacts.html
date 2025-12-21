@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <title>AromaCafe</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <!-- Логотип -->
+            <a href="index.html" class="logo">
+                <i class='bx bx-coffee'></i>AromaCafe</a>
+
+            <!-- Иконка меню -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html">Главная</a></li>
+                    <li class="menu__item"><a href="about.html">О нас</a></li>
+                    <li class="menu__item"><a href="menu.html">Меню</a></li>
+                    <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                    <li class="menu__item"><a href="checkout.html">Оформление заказа</a></li>
+                    <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+    <!-- Контент -->
+    
+    <div class="header__content">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class='bx bx-moon'></i>
+    </button>
+    </div>
+    </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Контакты -->
+
+<main class="contacts-page">
+    <h2 class="contacts-title">
+        Свяжитесь с нами — AromaCafe всегда на связи ☕
+    </h2>
+
+    <section class="contacts-horizontal">
+        <!-- Информация -->
+        <div class="contacts-card contacts-info">
+            <h3 class="contacts-card__title">Контакты</h3>
+
+            <ul class="contacts__list">
+                <li><i class='bx bx-map'></i>г. Тирасполь, ул. Ленина, 15<span id="contactAddress"></span></li>
+                <li><i class='bx bx-phone'></i>+373 (777) 55-321<span id="contactPhone"></span></li>
+                <li><i class='bx bx-envelope'></i>aromacafe@gmail.com<span id="contactEmail"></span></li>
+            </ul>
+
+            <div class="contacts-worktime">
+                <p id="workWeekdays"></p>
+                <p id="workWeekend"></p>
+            </div>
+
+            <div class="contacts-status" id="contactStatus"></div>
+
+            <div class="contacts-socials">
+                <a id="socialInstagram" target="_blank"><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                <a id="socialFacebook" target="_blank"><a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-facebook'></i></a>
+                <a id="socialTelegram" target="_blank"><a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-telegram'></i></a>
+            </div>
+        </div>
+
+        <!-- Форма -->
+        <div class="contacts-card">
+    <h3 class="contacts-card__title">Обратная связь</h3>
+
+    <form class="contacts-form" id="contactForm" novalidate>
+
+    <div class="field">
+        <label class="field__label">Имя</label>
+        <input class="field__input" type="text" name="name" placeholder="Ваше имя" required />
+        <small class="field__error"></small>
+    </div>
+
+    <div class="field">
+        <label class="field__label">Телефон</label>
+        <input class="field__input" type="tel" name="phone" placeholder="+373 (___) __-___" required />
+        <small class="field__error"></small>
+    </div>
+
+    <div class="field">
+    <label class="field__label">Тема</label>
+    <select class="field__input" name="topic" required>
+        <option value="" selected disabled>Выберите тему</option>
+        <option value="order">Вопрос по заказу</option>
+        <option value="delivery">Доставка</option>
+        <option value="menu">Меню</option>
+        <option value="other">Другое</option>
+    </select>
+    <small class="field__error"></small>
+</div>
+
+    <div class="field">
+    <label class="field__label">Сообщение</label>
+    <textarea
+        class="field__input field__textarea"
+        name="message"
+        placeholder="Напишите сообщение..."
+        required>
+    </textarea>
+    <small class="field__error"></small>
+    </div>
+
+    <button class="contacts-btn" type="submit">
+        Отправить <i class='bx bx-send'></i>
+    </button>
+
+    <p class="contacts-success" id="formSuccess">
+        ✅ Сообщение отправлено! Мы ответим вам в ближайшее время.
+    </p>
+    </form>
+</div>
+
+        <!-- MAP -->
+        <div class="contacts-card contacts-map">
+            <h3 class="contacts-card__title">Мы на карте</h3>
+
+            <iframe
+                src="https://www.google.com/maps?q=Tiraspol%20Lenina%2045&output=embed"
+                loading="lazy">
+            </iframe>
+
+            <a class="route-btn" target="_blank"
+                href="https://www.google.com/maps?q=Tiraspol%20Lenina%2045">
+                Построить маршрут <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+    </section>
+</main>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__container">
+
+            <!-- Лого & О нас -->
+            <div class="footer__about">
+                <a href="index.html" class="footer__logo">
+                    <i class='bx bx-coffee'></i> AromaCafe</a>
+                <p class="footer__text">
+                    AromaCafe — это место, где каждый глоток дарит настроение.
+                    Мы создаём уют, вкус и атмосферу для вас каждый день.
+                </p>
+            </div>
+
+            <!-- Навигация -->
+            <div class="footer__nav">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__list">
+                    <li class="menu__item"><a href="index.html">Главная</a></li>
+                    <li class="menu__item"><a href="about.html">О нас</a></li>
+                    <li class="menu__item"><a href="menu.html">Меню</a></li>
+                    <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                    <li class="menu__item"><a href="checkout.html">Оформить заказ</a></li>
+                    <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Контакты -->
+            <div class="footer__contacts">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list">
+                    <li><i class='bx bx-map'></i> г. Тирасполь, ул. Ленина, 15</li>
+                    <li><i class='bx bx-phone'></i> +373 (777) 55-321</li>
+                    <li><i class='bx bx-envelope'></i> aromacafe@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Соц.сети -->
+            <div class="footer__socials">
+                <h3 class="footer__title">Мы в соцсетях</h3>
+                <div class="footer__icons">
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-telegram'></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="footer__bottom">
+            <p class="footer__copy">
+                © <span id="footerYear"></span> AromaCafe. Все права защищены.
+                <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            </p>
+            <p class="footer__author">
+                Сайт разработан: <span> Захарова А.А.</span>
+            </p>
+    </div>
+</footer>
+
+<!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/contacts.js"></script>
+
+
+</body>
+</html>

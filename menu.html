@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <title>AromaCafe</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+
+    <!-- Лого -->
+            <a href="#" class="logo">
+                <i class='bx  bx-coffee'></i>AromaCafe</a>
+
+    <!-- Иконка меню -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <!-- Навигация -->
+    <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html">Главная</a></li>
+                    <li class="menu__item"><a href="about.html">О нас</a></li>
+                    <li class="menu__item"><a href="menu.html">Меню</a></li>
+                    <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                    <li class="menu__item"><a href="checkout.html">Оформить заказ</a></li>
+                    <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+    <!-- Контент -->
+    <div class="header__content">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class='bx bx-moon'></i>
+    </button>
+        </div>
+    </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Меню -->
+<main>
+<section class="menu__section" id="menu">
+        <div class="menu__head container">
+        <h2 class="menu__title"><span>Наше</span> Меню</h2>
+
+        <div class="menu__controls">
+            <div class="filter">
+                <button class="filter__btn filter__btn--active" data-filter="all">Всё</button>
+                <button class="filter__btn" data-filter="hot">Горячие напитки</button>
+                <button class="filter__btn" data-filter="cold">Холодные напитки</button>
+                <button class="filter__btn" data-filter="beans">Сорта кофе</button>
+                <button class="filter__btn" data-filter="dessert">Выпечка</button>
+    </div>
+
+<div class="menu__shop">
+    <a href="cart.html" class="cart__btn" aria-label="Cart">
+        <i class='bx bx-cart'></i>
+        <span class="cart__count" id="cartCount">0</span>
+    </a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="menu__grid container" id="productsGrid">
+    <!-- Карточки продуктов (16) -->
+    <!-- 1 -->
+<article class="product-card"
+        data-id="p1"
+        data-title="Espresso"
+        data-price-s="10"
+        data-price-m="12"
+        data-price-l="15"
+        data-img="IMG/p1.png"
+        data-discount="20"
+        data-type="hot"
+        data-category="drink">
+
+            <div class="product-card__sticker">-20%</div>
+            <button class="product-card__like" aria-label="like" title="Добавить в избранное">
+            <i class='bx bx-heart'></i>
+        </button>
+    <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p1.png" alt="Эспрессо">
+    </div>
+            <div class="product-card__body">
+            <span class="product-card__tag">Горячие напитки</span>
+            <h3 class="product-card__title">Эспрессо</h3>
+            <p class="product-card__subtitle">Классический крепкий кофе</p>
+    <div class="product-card__foot">
+            <div class="product-card__price">12<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+    <!-- 2 -->
+<article class="product-card" 
+        data-id="p2"
+        data-title="Latte"
+        data-price-s="22"
+        data-price-m="24"
+        data-price-l="27"
+        data-img="IMG/p2.png"
+        data-discount="0"
+        data-type="hot"
+        data-category="drink">
+            <div class="product-card__sticker sticker--new">NEW</div>
+            <button class="product-card__like"><i class='bx bx-heart'></i>
+        </button>
+                <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p2.png" alt="Латте">
+        </div>
+            <div class="product-card__body">
+            <span class="product-card__tag">Горячие напитки</span>
+            <h3 class="product-card__title">Латте</h3>
+            <p class="product-card__subtitle">Мягкий кофе с молочной пеной</p>
+                <div class="product-card__foot">
+            <div class="product-card__price">24<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+    <!-- 3 -->
+<article class="product-card" 
+        data-id="p3"
+        data-title="Aci Latte"
+        data-price-s="28"
+        data-price-m="30"
+        data-price-l="33"
+        data-img="IMG/p3.png"
+        data-discount="0"
+        data-type="cold"
+        data-category="drink">
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p3.png" alt="Айс Латте">
+        </div>
+                <div class="product-card__body">
+            <span class="product-card__tag">Холодные напитки</span>
+            <h3 class="product-card__title">Айс Латте </h3>
+            <p class="product-card__subtitle">Освежающий холодный латте</p>
+        <div class="product-card__foot">
+            <div class="product-card__price">30<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+    <!-- 4 -->
+<article class="product-card" 
+        data-id="p4"
+        data-title="Arabica"
+        data-price="220"
+        data-img="IMG/p4.png"
+        data-discount="15"
+        data-category="beans">
+            <div class="product-card__sticker">-15%</div>
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p4.png" alt="Арибика">
+    </div>
+        <div class="product-card__body">
+            <span class="product-card__tag">Сорта кофе</span>
+            <h3 class="product-card__title">Арабика</h3>
+            <p class="product-card__subtitle">Фруктовый аромат, мягкая кислинка</p>
+            <div class="product-card__foot">
+        <div class="product-card__price">220<span class="product-card__currency">руб</span></div>
+        <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+    <!-- 5 -->
+<article class="product-card" 
+        data-id="p5"
+        data-title="Cheesecake"
+        data-price="65"
+        data-img="IMG/p5.png"
+        data-discount="0"
+        data-category="dessert">
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p5.png" alt="Чизкейк">
+    </div>
+    <div class="product-card__body">
+            <span class="product-card__tag">Выпечка</span>
+            <h3 class="product-card__title">Чизкейк</h3>
+            <p class="product-card__subtitle">Новый чизкейк "Лесные ягоды"</p>
+    <div class="product-card__foot">
+            <div class="product-card__price">65<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+    <!-- 6 -->
+<article class="product-card" 
+        data-id="p6"
+        data-title="Cappuccino"
+        data-price-s="16"
+        data-price-m="18"
+        data-price-l="21"
+        data-img="IMG/p6.png"
+        data-discount="0"
+        data-type="hot"
+        data-category="drink">
+        <div class="product-card__sticker sticker--hit">HIT</div>
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p6.png" alt="Капучино с шоколадом">
+    </div>
+        <div class="product-card__body">
+            <span class="product-card__tag">Горячие напитки</span>
+            <h3 class="product-card__title">Капучино с шоколадной крошкой</h3>
+            <p class="product-card__subtitle">Кремовый, с идеальной пеной и горьким шоколадом</p>
+        <div class="product-card__foot">
+            <div class="product-card__price">18<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+    <!-- 7 -->
+<article class="product-card" 
+        data-id="p7"
+        data-title="Frappe"
+        data-price-s="38"
+        data-price-m="40"
+        data-price-l="43"
+        data-img="IMG/p7.png"
+        data-discount="0"
+        data-type="cold"
+        data-category="drink">
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p7.png" alt="Фраппе">
+    </div>
+    <div class="product-card__body">
+            <span class="product-card__tag">Холодные напитки</span>
+            <h3 class="product-card__title">Фраппе</h3>
+            <p class="product-card__subtitle">Пенистый кофе с нежнейшими сливками</p>
+    <div class="product-card__foot">
+            <div class="product-card__price">40<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+    <!-- 8 -->
+<article class="product-card" 
+        data-id="p8"
+        data-title="Robusta"
+        data-price="200"
+        data-img="IMG/p8.png"
+        data-discount="0"
+        data-category="beans">
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p8.png" alt="Робуста">
+    </div>
+    <div class="product-card__body">
+            <span class="product-card__tag">Сорта кофе</span>
+            <h3 class="product-card__title">Робуста</h3>
+            <p class="product-card__subtitle">Плотность и тельность зёрен</p>
+    <div class="product-card__foot">
+            <div class="product-card__price">200<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+    <!-- 9 -->
+<article class="product-card"  
+        data-id="p9"
+        data-title="Croissant"
+        data-price="25"
+        data-img="IMG/p9.png"
+        data-discount="0"
+        data-category="dessert">
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p9.png" alt="Круассан с шоколадом">
+        </div>
+    <div class="product-card__body">
+            <span class="product-card__tag">Выпечка</span>
+            <h3 class="product-card__title">Круассан с шоколадом</h3>
+            <p class="product-card__subtitle">Французская выпечка и хрустящего теста, скрывающая нежную шоколадную начинку</p>
+    <div class="product-card__foot">
+            <div class="product-card__price">25<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+<!-- 10 -->
+<article class="product-card" 
+        data-id="p10"
+        data-title="Americano"
+        data-price-s="13"
+        data-price-m="15"
+        data-price-l="18"
+        data-img="IMG/p10.png"
+        data-discount="0"
+        data-type="hot"
+        data-category="drink">
+            <div class="product-card__sticker sticker--new">NEW</div>
+            <button class="product-card__like"><i class='bx bx-heart'></i>
+        </button>
+                <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p10.png" alt="Американо">
+        </div>
+            <div class="product-card__body">
+            <span class="product-card__tag">Горячие напитки</span>
+            <h3 class="product-card__title">Американо</h3>
+            <p class="product-card__subtitle">Классический кофе</p>
+                <div class="product-card__foot">
+            <div class="product-card__price">15<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+<!-- 11 -->
+<article class="product-card" 
+        data-id="p11"
+        data-title="Gleasse"
+        data-price-s="28"
+        data-price-m="30"
+        data-price-l="33"
+        data-img="IMG/p11.png"
+        data-discount="0"
+        data-type="cold"
+        data-category="drink">
+            <div class="product-card__sticker sticker--new">NEW</div>
+            <button class="product-card__like"><i class='bx bx-heart'></i>
+        </button>
+                <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p11.png" alt="Гляссе">
+        </div>
+            <div class="product-card__body">
+            <span class="product-card__tag">Холодные напитки</span>
+            <h3 class="product-card__title">Гляссе</h3>
+            <p class="product-card__subtitle">Кофе с шариком ванильного мороженного</p>
+                <div class="product-card__foot">
+            <div class="product-card__price">30<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+<!-- 12 -->
+<article class="product-card" 
+        data-id="p12"
+        data-title="Bumble Coffee"
+        data-price-s="26"
+        data-price-m="28"
+        data-price-l="31"
+        data-img="IMG/p12.png"
+        data-discount="5"
+        data-type="cold"
+        data-category="drink">
+            <div class="product-card__sticker">-5%</div>
+            <button class="product-card__like" aria-label="like" title="Добавить в избранное">
+            <i class='bx bx-heart'></i>
+        </button>
+    <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p12.png" alt="Бамбал Кофе">
+    </div>
+            <div class="product-card__body">
+            <span class="product-card__tag">Холодные напитки</span>
+            <h3 class="product-card__title">Бамбал кофе</h3>
+            <p class="product-card__subtitle">Кофе с апельсиновым соком</p>
+    <div class="product-card__foot">
+            <div class="product-card__price">28<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+<!-- 13 -->
+<article class="product-card"  
+        data-id="p13"
+        data-title="Liberika"
+        data-price="250"
+        data-img="IMG/p13.png"
+        data-discount="0"
+        data-category="beans">
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p13.png" alt="Либерика">
+    </div>
+    <div class="product-card__body">
+            <span class="product-card__tag">Сорта кофе</span>
+            <h3 class="product-card__title">Либерика</h3>
+            <p class="product-card__subtitle">Горечь зёрен со сладостью банана и джекфрута</p>
+    <div class="product-card__foot">
+            <div class="product-card__price">250<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+<!-- 14 -->
+<article class="product-card"  
+        data-id="p14"
+        data-title="Excelsa"
+        data-price="335"
+        data-img="IMG/p14.png"
+        data-discount="10"
+        data-category="beans">
+            <div class="product-card__sticker">-10%</div>
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p14.png" alt="Эксцельса">
+    </div>
+        <div class="product-card__body">
+            <span class="product-card__tag">Сорта кофе</span>
+            <h3 class="product-card__title">Эксцельса</h3>
+            <p class="product-card__subtitle">Фруктово-шоколадный аромат зёрен</p>
+            <div class="product-card__foot">
+        <div class="product-card__price">335<span class="product-card__currency">руб</span></div>
+        <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+<!-- 15 -->
+<article class="product-card"  
+        data-id="p15"
+        data-title="Bagel"
+        data-price="37"
+        data-img="IMG/p15.png"
+        data-discount="0"
+        data-category="dessert">
+            <button class="product-card__like"><i class='bx bx-heart'></i></button>
+            <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p15.png" alt="Бэйгл с курицей">
+        </div>
+    <div class="product-card__body">
+            <span class="product-card__tag">Выпечка</span>
+            <h3 class="product-card__title">Бэйгл с курицей</h3>
+            <p class="product-card__subtitle">Нежнейшая курица, свежие овощи и булочка</p>
+    <div class="product-card__foot">
+            <div class="product-card__price">37<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+
+<!-- 16 -->
+<article class="product-card" 
+        data-id="p16"
+        data-title="Crumbl"
+        data-price="40"
+        data-img="IMG/p16.png"
+        data-discount="0"
+        data-category="dessert">
+            <div class="product-card__sticker sticker--new">NEW</div>
+            <button class="product-card__like"><i class='bx bx-heart'></i>
+        </button>
+                <div class="product-card__media">
+            <img class="product-card__img" src="IMG/p16.png" alt="Crumbl Сookies">
+        </div>
+            <div class="product-card__body">
+            <span class="product-card__tag">Выпечка</span>
+            <h3 class="product-card__title">Крамбл кукис</h3>
+            <p class="product-card__subtitle">Американское печенье 3 шоколада</p>
+                <div class="product-card__foot">
+            <div class="product-card__price">60<span class="product-card__currency">руб</span></div>
+            <button class="product-card__add" type="button" title="Добавить в корзину">
+    <i class='bx bx-cart-add'></i>
+</button>
+
+        </div>
+    </div>
+</article>
+</div>
+</section>
+</main>
+
+<!-- Под категории -->
+<template id="productOptionsTemplate">
+    <div class="product-options">
+
+        <div class="option-group">
+            <label>Размер</label>
+            <div class="option-buttons size-options">
+                <button data-size="S">S</button>
+                <button data-size="M" class="active">M</button>
+                <button data-size="L">L</button>
+            </div>
+        </div>
+
+        <div class="option-group">
+            <label>Молоко</label>
+            <select class="milk-select">
+                <option value="Без молока">-</option>
+                <option value="Классика">Классика</option>
+                <option value="Безлактозное">Безлактозное</option>
+                <option value="Миндальное">Миндальное</option>
+            </select>
+        </div>
+
+        <div class="option-group">
+            <label>Сироп</label>
+            <select class="syrup-select">
+                <option value="Без сиропа">-</option>
+                <option value="Ваниль">Ваниль</option>
+                <option value="Шоколад">Шоколад</option>
+                <option value="Кокос">Кокос</option>
+                <option value="Солёная карамель">Солёная карамель</option>
+                <option value="Клубника">Клубника</option>
+                <option value="Лесной орех">Лесной орех</option>
+            </select>
+        </div>
+
+    </div>
+</template>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__container">
+
+        <!-- Лого & О нас -->
+        <div class="footer__about">
+            <a href="index.html" class="footer__logo">
+                <i class='bx bx-coffee'></i> AromaCafe</a>
+            <p class="footer__text">
+                AromaCafe — это место, где каждый глоток дарит настроение.
+                Мы создаём уют, вкус и атмосферу для вас каждый день.
+            </p>
+        </div>
+
+        <!-- Навигация -->
+        <div class="footer__nav">
+            <h3 class="footer__title">Навигация</h3>
+            <ul class="footer__list">
+                <li class="menu__item"><a href="index.html">Главная</a></li>
+                <li class="menu__item"><a href="about.html">О нас</a></li>
+                <li class="menu__item"><a href="menu.html">Меню</a></li>
+                <li class="menu__item"><a href="cart.html">Корзина</a></li>
+                <li class="menu__item"><a href="checkout.html">Оформить заказ</a></li>
+                <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer__contacts">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__list">
+                <li><i class='bx bx-map'></i> г. Тирасполь, ул. Ленина, 15</li>
+                <li><i class='bx bx-phone'></i> +373 (777) 55-321</li>
+                <li><i class='bx bx-envelope'></i> aromacafe@gmail.com</li>
+            </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer__socials">
+            <h3 class="footer__title">Мы в соцсетях</h3>
+            <div class="footer__icons">
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><i class='bx bxl-telegram'></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="footer__bottom">
+    <p class="footer__copy">
+        © <span id="footerYear"></span> AromaCafe. Все права защищены.
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+    </p>
+    <p class="footer__author">
+        Сайт разработан: <span>Захарова А.А.</span>
+    </p>
+</div>
+
+</footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+</html>
