@@ -862,7 +862,7 @@ body {
     margin: 48px auto 0;
     padding: 24px 20px 0;
 
-    border-top: 0 8px 11px rgba(116, 78, 50, 0.991);
+    border-top: 1px solid var(--broun-color);
 
     display: flex;
     align-items: center;
@@ -1005,7 +1005,7 @@ body {
 .about-hero__btn-ghost {
     background: transparent;
     color: var(--bg-color);
-    border: 1px solid 0 8px 11px rgba(116, 78, 50, 0.991);
+    border: 1px solid var(--broun-color);
 }
 
 .about-hero__btn-ghost:hover {
@@ -2276,7 +2276,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0 8px 11px rgba(116, 78, 50, 0.991);
+    border: 1px solid var(--broun-color);
 }
 
 .contacts-socials i{
@@ -2332,7 +2332,7 @@ body {
     text-align: center;
     padding: 12px;
     border-radius: 16px;
-    border: 0 8px 11px rgba(116, 78, 50, 0.991);
+    border: 1px solid var(--broun-color);
     font-weight: 700;
     color: var(--broun-color);
     text-decoration: none;
@@ -2950,4 +2950,5 @@ body.dark .story-modal__content {
         justify-content: center;
     }
 }
+
 
